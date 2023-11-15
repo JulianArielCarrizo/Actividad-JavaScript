@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejericios JavaScript</title>
+</head>
+
+<body class="grid-contenedor">
+    <h1 class="titulo">Ejercicios</h1>
+    <div class="carrusel">
+
+        <div class="contenedorCarrusel">
+            <div class="carrusell" id="carrusel">
+                <div class="carruselSection">
+                    <img src="./image/imgUno.jpg" alt="" class="carruselImg">
+                </div>
+                <div class="carruselSection">
+                    <img src="./image/imgDos.jpg" alt="" class="carruselImg">
+                </div>
+                <div class="carruselSection">
+                    <img src="./image/imgTres.jpg" alt="" class="carruselImg">
+                </div>
+                <div class="carruselSection">
+                    <img src="./image/imgCuatro.jpg" alt="" class="carruselImg">
+                </div>
+            </div>
+
+            <div class="carruselBoton carruselBtnDer" id="btnDer" onclick="moverDerecha()">></div>
+            <div class="carruselBoton carruselBtnIzq" id="btnIzq" onclick="moverIzquierda()"><</div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cambiaTexto">
+
+        <h2 class="subtituloCambiaTexto">Texto que cambia de tamaño con boton</h2>
+        <p class="parrafoCambiaTexto" id="pCambiaTexto">Esto es un texto que cambiara de tamaño Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Corrupti a, itaque deserunt tempore tempora dicta necessitatibus
+            praesentium illum delectus perspiciatis hic asperiores iste corporis, excepturi saepe ut sit suscipit cum.
+        </p>
+        <button class="botonCambiaTexto btn" onclick="cambiarTexto()" id="btnCambiaTexto">cambiar tamaño</button>
+    </div>
+
+    <div class="tarjetas">
+        <div class="tarjetaUno">
+            <div class="contenedorTrarjetaUno contenedorTarjeta">
+                <h2 class="subtituloTar">Primera tarjeta</h2>
+                <div class="contenedorImangenTarjetaUno TarjetaImagen">
+                    <img src="./image/imgTarjetaUno.jpg" alt="" class="imagenTar">
+                </div>
+                <p class="parrrafoUnoTarjetas parraforTarjertas">Lorem ipsum asdolor sit admet.</p>
+                <div class="textOcultoUno" id="textoEscondidoUno">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit uno.</p>
+                </div>
+                <button class="btn" onclick="mostrarTextoUno()">leer mas</button>
+
+            </div>
+        </div>
+        <div class="tarjetaDos">
+            <div class="contenedorTrarjetaDos contenedorTarjeta">
+                <h2 class="subtituloTar">Segunda tarjeta</h2>
+                <div class="contenedorImangenTarjetaDos TarjetaImagen">
+                    <img src="./image/imgTarjetaDos.jpg" alt="" class="imagenTar">
+                </div>
+                <p class="parrafoDosTarjetas parraforTarjertas">Lorem ipsum dolor sit amet.</p>
+                <div class="textOculto textOcultoDos" id="textoEscondidoDos">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dos.</p>
+                </div>
+                <button class="btn" id="mostrarTextoDos" onclick="mostrarTextoDos()">leer mas</button>
+
+            </div>
+        </div>
+        <div class="tarjetaTres">
+            <div class="contenedorTrarjetaTres contenedorTarjeta">
+                <h2 class="subtituloTar">Tercera tarjeta </h2>
+                <div class="contenedorImangenTarjetaTres TarjetaImagen">
+                    <img src="./image/imgTarjetaTres.jpg" alt="" class="imagenTar">
+                </div>
+                <p class="parrafoTresTarjetas parraforTarjertas">Lorem ipsum asdolor sit admet.</p>
+                <div class="textOculto textOcultoTres" id="textoEscondidoTres">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit tres.</p>
+
+                </div>
+                <button class="btn" id="mostrarTextoTres" onclick="mostrarTextoTres()">leer mas</button>
+            </div>
+        </div>
+        <div class="tarjetaCuatro">
+            <div class="contenedorTrarjetaCuatro contenedorTarjeta">
+                <h2 class="subtituloTar">Cuarta Tarjeta</h2>
+                <div class="contenedorImangenTarjetaCuatro TarjetaImagen">
+                    <img src="./image/imgTarjetaCuatro.jpg" alt="" class="imagenTar">
+                </div>
+                <p class="parrafoCuatroTarjetas parraforTarjertas">Lorem ipsum dolor sit amet.</p>
+                <div class="textOcultoCuatro" id="textoEscondidoCuatro">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit cuatro.</p>
+                </div>
+                <button class="btn" onclick="mostrarTextoCuatro()">leer mas</button>
+
+            </div>
+        </div>
+        <div class="tarjetaCinco">
+            <div class="contenedorTarjetaCinco contenedorTarjeta">
+                <h2 class="subtituloTar">Quinta Tarjeta</h2>
+                <div class="contenedorImangenTarjetaCinco TarjetaImagen">
+                    <img src="./image/imgTarjetaCinco.jpg" alt="" class="imagenTar">
+                </div>
+                <p class="parrafoCincoTarjetas parraforTarjertas">Lorem ipsumas dolor sit amet.</p>
+                <div class="textOculto textOcultoCinco" id="textoEscondidoCinco">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit cinco.</p>
+                </div>
+                <button class="btn" id="mostrarTextoCinco" onclick="mostrarTextoCinco()">leer mas</button>
+
+            </div>
+        </div>
+        <div class="tarjetaSeis">
+            <div class="contenedorTrarjetaSeis contenedorTarjeta">
+                <h2 class="subtituloTar">Sexta Tarjeta</h2>
+                <div class="contenedorImangenTarjetaSeis TarjetaImagen">
+                    <img src="./image/imgTarjetaSeis.jpg" alt="" class="imagenTar">
+                </div>
+                <p class="parrafoSeisTarjetas parraforTarjertas">Lorem ipsum asdolor sit admet.</p>
+                <div class="textOculto textOcultoSeis" id="textoEscondidoSeis">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit seis.</p>
+
+                </div>
+                <button class="btn" id="mostrarTextoSeis" onclick="mostrarTextoSeis()" >leer mas</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="ejercicio-1">
+        <h2 class="subtitulo">Ejericicio 1</h2>
+        <p>Determina si un numero es primo o no.</p>
+        <br><br>
+        Ingrese un numero: <input class="comprobarNumero entrada"  type="text" id="entradaNumeroEjercicioUno" placeholder="numero a comprobar">
+        <button class="btn">checkear numero</button>
+        <div class="respuestaUno" id="respuestaEjeUno">
+            <p class="respuestaEjeUno"></p>
+        </div>
+
+    </div>
+
+
+    <div class="ejercicio-2">
+        <div class="contenedorSubtituloEjeDos">
+            <h2 class="subtitulo subtituloEjeDos">Ejercicio 2</h2>
+        </div>
+        <div class="contenedorParrafoEjeDos">
+            <p class="indicacionEjeDos">Operaciones de matriz: implementa una funcion que realice operaciones de matriz,
+                como suma, resta
+                o multiplicacion, en dos matrices dadas.
+            </p>
+        </div>
+
+        <div class="contenedorMatrizUno">
+            <h3 class="tituloMatriz">Matriz uno</h3>
+            <div class="M1Array01">
+                <p class="tituloArray">Array Uno</p>
+                <div class="contenedorMatrizUnoArrayUno contenedorMatriz">
+                    <input type="text" class="matrizUno m1DatoArrayUno" maxlength="2">
+                    <input type="text" class="matrizUno m1DatoArrayUno" maxlength="2">
+                    <input type="text" class="matrizUno m1DatoArrayUno" maxlength="2">
+                </div>
+                <div class="M1Array02">
+                    <p class="tituloArray">Array dos</p>
+                </div>
+                <div class="contenedorMatrizUnoArrayDos contenedorMatriz">
+                    <input type="text" class="matrizUno m1DatoArrayDos" maxlength="2">
+                    <input type="text" class="matrizUno m1DatoArrayDos" maxlength="2">
+                    <input type="text" class="matrizUno m1DataArrayDos" maxlength="2">
+                </div>
+                <div class="M1Array03">
+                    <p class="tituloArray">Array tres</p>
+                </div>
+                <div class="contenedorMatrizUnoArrayTres contenedorMatriz">
+                    <input type="text" class="matrizUno m1DatoArrayTres" maxlength="2">
+                    <input type="text" class="matrizUno m1DatoArrayTres" maxlength="2">
+                    <input type="text" class="matrizUno m1DatoArrayTres" maxlength="2">
+
+                </div>
+            </div>
+        </div>
+        <div class="contenedorMatrizDos">
+            <h3 class="tituloMatriz">Matriz dos</h3>
+
+
+            <div>
+                <p class="tituloArray">Array uno</p>
+                <div class="contenedorMatrizDosArrrayUno contenedorMatriz">
+                    <input type="text" class="matrizDos m2DatoArrayUno" maxlength="2">
+                    <input type="text" class="matrizDos m2DatoArrayUno" maxlength="2">
+                    <input type="text" class="matrizDos m2DatoArrayUno" maxlength="2">
+                </div>
+            </div>
+            <div>
+                <p class="tituloArray">Array Dos</p>
+                <div class="contenedorMatrizDosArrrayDos contenedorMatriz">
+                    <input type="text" class="matrizDos m2DatoArrayDos" maxlength="2">
+                    <input type="text" class="matrizDos m2DatoArrayDos" maxlength="2">
+                    <input type="text" class="matrizDos m2DatoArrayDos" maxlength="2">
+                </div>
+            </div>
+            <div>
+                <p class="tituloArray">Array tres</p>
+                <div class="contenedorMatrizDosArrrayTres contenedorMatriz">
+                    <input type="text" class="matrizDos m2DatoArrayTres" maxlength="2">
+                    <input type="text" class="matrizDos m2DatoArrayTres" maxlength="2">
+                    <input type="text" class="matrizDos m2DatoArrayTres" maxlength="2">
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedorResultadoEjeDos">
+
+            <h3 class="tituloResultadoDos tituloMatriz">Resultados</h3>
+
+
+            <div class="contenedorResultadoArrayUnoUno">
+                <p class="resultadoUno resultadoArray"></p>
+            </div>
+            <div class="contenedorResultadoArrayUnoDos">
+                <p class="resultadoDos resultadoArray"></p>
+            </div>
+            <div class="contenedorResultadoArrayUnoTres">
+                <p class="resultadoTres resultadoArray"></p>
+            </div>
+
+            <div class="contenedorResultadoArrayDosUno">
+                <p class="resultadoUno resultadoArray"></p>
+            </div>
+            <div class="contenedorResultadoArrayDosDos">
+                <p class="resultadoDos resultadoArray"></p>
+            </div>
+            <div class="contenedorResultadoArrayDosTres">
+                <p class="resultadoTre resultadoArray"></p>
+            </div>
+
+            <div class="contenedorResultadoArrayTresUno">
+                <p class="resultadoUno resultadoArray"></p>
+            </div>
+            <div class="contenedorResultadoArrayTresDos">
+                <p class="resultadoDos resultadoArray"></p>
+            </div>
+            <div class="contenedorResultadoArrayTresTres">
+                <p class="resultadoTres resultadoArray"></p>
+            </div>
+
+        </div>
+
+        <div class="desplegableBotonEjeDos">
+            <p>Tipo de operación:</p>
+            <select name="operaciones" id="operadores" class="operacionesMatrices">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multiplicacion">Multiplicación</option>
+                <option value="division">División</option>
+            </select>
+            <button  class="btn" onclick="resultadoEjercicio2()">ver resultado</button>
+        </div>
+    </div>
+
+
+
+    <div class="ejercicio-3">
+        <h2 class="subtitulo">Ejercicio 3</h2>
+        <p>Suma de numeros en un rango: escribe una funcion que calcule la suma de todos los numeros en un rango dado
+            indicar indice inicial y indice final para indicar el rango. rango total 0-9</p>
+        
+        <p>Array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]</p>
+        
+        posición inicial: <input class="rangoInicial rango entrada" type="text" id="rangoInicialEjercicioTres" maxlength="1"><br>
+        posición final: <input class="rangoFinal rango entrada posFin" type="text" id="rangoFinalEjercicioTres" maxlength="1"><br>
+        <button class="btn">sumar intervalo </button>
+        <div>
+            <p class="resultadoEje3" id="rEje3"></p>
+        </div>
+    </div>
+
+
+    <div class="ejercicio-4">
+        <h2 class="subtitulo">Ejercicio 4</h2>
+        <p>contar vocales: cuenta el numero de vocales en una cadena de texto</p>
+        <br><br>
+        ingrese texto: <input  type="text" class="textoEntradaEj4 entrada" id="entradaPalabrasEjercicioCuatro"
+            placeholder="ingresa una palabra">
+        <button class="btn4 btn">contar vocales</button>
+        <p class="resultado"></p>
+    </div>
+
+    <div class="ejercicio-5">
+        <h2 class="subtitulo">Ejercicio 5</h2>
+        <p>De una matriz devuelve una matriz con elementos unicos.(es decir sin duplicados).
+            Por Ejemplo: ["Sofia", "Maria", "Pedro","Sofia"]---- > ["Sofia","Maria","Pedro"]</p>
+        <br><br>
+        ingrese elementos de matriz: <input class="entrada" type="text" id="entradaElementosEjercicioCinco"
+            placeholder="ingres elementos a matriz"> <button class="btn">mostrar sin
+            duplicados</button>
+        <p class="resultadoEjeCinco"></p>
+    </div>
+
+
+    <div class="ejercicio-6">
+        <h2 class="subtitulo">Ejercicio 6</h2>
+        <p>Invertir un texto sin usar reverse</p>
+        <br><br>
+        ingrese un texto <input class="campoTexto entrada" type="text" id="entradaTextoEjercicioSeis"
+            placeholder="ingrese una frase"><button class="btn">convertir texto</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
